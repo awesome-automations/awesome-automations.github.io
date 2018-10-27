@@ -1,13 +1,14 @@
 ---
 layout: page-fullwidth
 show_meta: false
-title: "Smart Switches"
-teaser: "The following are some of the industry best smart switches available, and many of them will work with Alexa and Google Home!"
+title: "Smart Lights & Switches"
+teaser: "The following are some of the industry best smart lights & switches available, and many of them will work with Alexa and Google Home!"
 categories:
     - switches
+    - lights
     - devices
 header:
-   image_fullwidth: "header_homepage_13.jpg"
+   image_fullwidth: "header_unsplash_27.jpg"
 permalink: "/smarthome-devices/switches/"
 ---
 

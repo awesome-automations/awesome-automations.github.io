@@ -1,0 +1,17 @@
+{% assign cat = page.url | remove:'/ideas/' | remove:'/' %}
+<div class="row">
+{% for link in site.data.ideas %}
+  {% if link.category == cat %}
+    <ul class="dropdown">
+    {% for dropdown_link in link.dropdown  %}
+      <h2>{{ dropdown_link.title }}</h2>
+      ID: {{link.category|title}}_{{dropdown_link.id}}<br>
+      <span style="font-size:xx-large">{{ dropdown_link.emoji }}</span><br/>
+      Trigger(s): {{ dropdown_link.trigger}}<br/>
+      Condition(s): {{ dropdown_link.condition}}<br/>
+      Actions(s): {{ dropdown_link.action}}<br/>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
+</div>

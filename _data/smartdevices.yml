@@ -1,81 +1,183 @@
-- title: "Smart Lights and Switches"
+- title: 'Smart Lights & Switches'
   side: left
-  category: 'switches'
+  category: switches
   dropdown:
-  - title: "Lifx Smart Bulb"
-    url: "http://amzn.to/2pTWaNm"
-    image: "lifx-bulb.jpg"
-  - title: "Lifx LED Strip One"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Two"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Three"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Four"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Five"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Six"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-- title: "Motion Sensors"
+  - title: Lifx Light Bulb
+    url: http://amzn.to/2pTWaNm
+    image: lifx-bulb.jpg
+  - title: Lifx LED Strip
+    url: http://amzn.to/2DI7i4P
+    image: lifx-led-strip.jpg
+  - title: Philips Hue Bulbs
+    url: http://amzn.to/2DLfuBi
+    image: philips-hue-bulbs.jpg
+  - title: Philips Hue Hub & Bulbs
+    url: http://amzn.to/2mH7bi8
+    image: philips-hue-hub.jpg
+  - title: TP-Link Smart Switches
+    url: http://amzn.to/2qeilPx
+    image: tplink-smart-switches.jpg
+  - title: Wemo Switches
+    url: http://amzn.to/2pairYc
+    image: wemo-light-switches.jpg
+  - title: ZWave Wallmotes
+    url: http://amzn.to/2DK11G5
+    image: wall-mote.jpg
+
+- title: 'Smart Outlets'
   side: left
-  category: 'sensors'
+  category: outlets
   dropdown:
-  - title: "In Wall Motion Sensors"
-    url: "http://amzn.to/2pV6SkH"
-    image: "in-wall-motion-sensors.jpg"
-  - title: "Xiaomi Motion Sensors"
-    url: "http://amzn.to/2DKO7aN"
-    image: "xiaomi-motion-sensor.jpg"
-  - title: "Lifx LED Strip One"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Two"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Three"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Four"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Five"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Six"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-- title: "IP Cameras"
+  - title: Aeotec Smart Outlet
+    url: http://amzn.to/2FKtegl
+    image: aeltec-smart-outlet.jpg
+  - title: Eteckcity RF Outlets
+    url: http://amzn.to/2pTIDFA
+    image: eteccity-rf-outlets.jpg
+  - title: RF Transmitters & Receivers
+    url: http://amzn.to/2qe8PMo
+    image: rf-transeivers.jpg
+
+- title: 'Home Security System'
   side: left
-  category: 'cameras'
+  category: security
   dropdown:
-  - title: "In Wall Motion Sensors"
-    url: "http://amzn.to/2pV6SkH"
-    image: "in-wall-motion-sensors.jpg"
-  - title: "Xiaomi Motion Sensors"
-    url: "http://amzn.to/2DKO7aN"
-    image: "xiaomi-motion-sensor.jpg"
-  - title: "Lifx LED Strip One"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Two"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Three"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Four"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Five"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
-  - title: "Lifx LED Strip Six"
-    url: "http://amzn.to/2DI7i4P"
-    image: "lifx-led-strip.jpg"
+  - title: Ring Doorbell Pro
+    url: http://amzn.to/2pVmS6y
+    image: ring-doorbell-pro.jpg
+  - title: SimpliSafe Home Security System
+    url: http://amzn.to/2pTIpyv
+    image: simplisafe-home-security.jpg
+  - title: Ubiquity 8-port PoE Switch
+    url: http://amzn.to/2uOJxSX
+    image: ubiquity-poe-switch.jpg
+  - title: HikVision Bullet IP Cameras
+    url: http://amzn.to/2suiPhT
+    image: hikvision-bullet-cameras.jpg
+  - title: Leeo Smoke Alert
+    url: http://amzn.to/2papVuj
+    image: leeo-smoke-alert.jpg
+
+- title: 'Motion Sensors'
+  side: left
+  category: sensors
+  dropdown:
+  - title: In Wall Motion Sensors
+    url: http://amzn.to/2pV6SkH
+    image: in-wall-motion-sensors.jpg
+  - title: Ecolink Motion Sensor
+    url: http://amzn.to/2DI5TeJ
+    image: ecolink-motion-sensors.jpg
+  - title: Xiaomi Motion Sensors
+    url: http://amzn.to/2DKO7aN
+    image: xiaomi-motion-sensor.jpg
+  - title: Ecolink Door Sensors
+    url: http://amzn.to/2DKYfjJ
+    image: door-sensors.jpg
+  - title: Door & Window Sensors
+    url: http://amzn.to/2DKzHHM
+    image: door-window-sensors.jpg
+  - title: Window Sensors
+    url: http://amzn.to/2FLRnTI
+    image: window-sensor.jpg
+
+- title: 'ZWave Devices'
+  side: left
+  category: zwave
+  dropdown:
+  - title: Aeotec ZWave Gen5 Stick
+    url: http://amzn.to/2pa9uhO
+    image: aeltec-zwave-stick.jpg
+  - title: Aeotec Energy Meter
+    url: http://amzn.to/2DKyxvU
+    image: aeotec-energy-meter.jpg
+  - title: Aeotec Multi Sensor 5
+    url: http://amzn.to/2qdYUqa
+    image: aeotec-multi-sensor.jpg
+  - title: Aeotec Multi Sensor 6
+    url: http://amzn.to/2pV5yOT
+    image: aeotec-multi-sensor6.jpg
+  - title: Aeotec Range Extender
+    url: http://amzn.to/2DKz7cK
+    image: range-extender.jpg
+
+- title: 'Multimedia Stuff'
+  side: left
+  category: media
+  dropdown:
+  - title: Bluetooth Speakers
+    url: http://amzn.to/2pU2V1Y
+    image: bluetooth-speaker.jpg
+  - title: DENON Receiver
+    url: http://amzn.to/2tVYN4b
+    image: denon-receiver.jpg
+  - title: ONKYO Receiver
+    url: http://amzn.to/2tVYN4b
+    image: denon-receiver.jpg
+
+- title: 'Garage Door Devices'
+  side: left
+  category: garage
+  dropdown:
+  - title: Garage Door Tilt Sensors
+    url: http://amzn.to/2DHQNWu
+    image: garage-tilt-sensor.jpg
+  - title: ZWave Garage Relay
+    url: http://amzn.to/2pV2wu1
+    image: garage-relay.jpg
+
+- title: 'Servers and Computers'
+  side: left
+  category: hardware
+  dropdown:
+  - title: UPS Battery
+    url: http://amzn.to/2DMx2gN
+    image: apcups-1500va.jpg
+  - title: NAS Storage
+    url: http://amzn.to/2DI8Coj
+    image: qnap-nas.jpg
+  - title: Raspberry PI 3
+    url: http://amzn.to/2p9RVhQ
+    image: raspberry-pi3.jpg
+
+- title: 'Smart Thermostat'
+  side: left
+  category: thermostat
+  dropdown:
+  - title: Ecobee Thermostat
+    url: http://amzn.to/2FQCsaX
+    image: ecobee4-thermostat.jpg
+  - title: Ecobee Room Sensors
+    url: http://amzn.to/2uuPAgl
+    image: ecobee-room-sensors.jpg
+  - title: Nest Thermostat
+    url: http://amzn.to/2Dgt3rv
+    image: nest-thermostat.jpg
+  - title: Xiaomi Temperature Sensor
+    url: http://amzn.to/2FQDgN1
+    image: xiaomi-temp-sensor.jpg
+
+- title: 'DIY Stuff'
+  side: left
+  category: diy
+  dropdown:
+  - title: Relays
+    url: http://amzn.to/2pTQ1kv
+    image: relay.jpg
+  - title: NodeMUC/ESP8266
+    url: http://amzn.to/2pV60wx
+    image: esp8266.jpg
+  - title: RF Transmitters & Receivers
+    url: http://amzn.to/2qe8PMo
+    image: rf-transeivers.jpg
+    
+- title: 'Smart Hubs'
+  side: left
+  category: gateway
+  dropdown:
+  - title: Xiaomi Aqara Gateway
+    url: http://amzn.to/2FQmFsz
+    image: xiaomi-gateway-kit.jpg
+  - title: Philips Hue Hub
+    url: http://amzn.to/2mH7bi8
+    image: philips-hue-hub.jpg

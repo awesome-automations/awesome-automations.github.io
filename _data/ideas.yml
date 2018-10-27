@@ -1,0 +1,46 @@
+- title: 'Automation Ideas for Garage'
+  side: left
+  category: garage
+  dropdown:
+  - id: 1
+    emoji: '💡'
+    trigger: Garage Door is Opened
+    condition: if the garage lights are off
+    action: turn on garage lights
+  - id: 2
+    emoji: '💡'
+    trigger: Lights are on for X minutes
+    condition: No motion detected for more than X minutes
+    action: turn off garage lights
+  - id: 3
+    emoji: '📱'
+    trigger: Garage doors are open
+    condition: Home Security System is set to away or home mode
+    action: Notify to my mobile
+  - id: 4
+    emoji: '🔊'
+    trigger: Garage doors are open
+    condition: Home Security System is set home mode
+    action: Notify via TTS
+  - id: 5
+    emoji: '📷'
+    trigger: Garage doors status changed
+    condition: none
+    action: Send me a picture of garage
+
+- title: 'Automation Ideas for Home Security'
+  side: left
+  category: security
+  dropdown:
+  - id: 1
+    trigger: When all family members are away
+    condition: None
+    action: Turn ON Home Security System
+  - id: 2
+    trigger: When Home Security System State Changed
+    condition: None
+    action: Notify my cell phone
+  - id: 3
+    trigger: Home Security System state changed
+    condition: after dark
+    action: Change hallway light color to green when secured, red when unsecured
