@@ -112,6 +112,8 @@ format: frontpage
     {{ content }}
 </div><!-- /.row -->
 
-{% if page.comments == true %}
-{% include _comments.html %}
-{% endif %}
+<div class="row">
+    {% if page.comments == true %}
+    {% include _comments.html %}
+    {% endif %}
+</div>
