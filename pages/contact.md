@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact and use our contact form"
-subheadline: "Wufoo-powered contact forms"
-teaser: "Get in touch with me? Use the contact form."
+meta_title: "Contact me"
+subheadline: "Have some cool automations to share?"
+teaser: "If you have any cool automations, please contact me!"
 permalink: "/contact/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
 
+If you have some cool automations that you would like to showcase or share other cool automations, you can share the details here. I will be happy to make it part of this web site for everyone to see!
 
- [1]: http://www.wufoo.com/
+[Share your Automation or Contact Me](https://github.com/awesome-automations/home/issues/new)
