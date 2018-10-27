@@ -11,17 +11,17 @@ widget1:
   title: "Blog & Portfolio"
   url: 'https://blog.kalavala.net/'
   image: widget-1-302x182.jpg
-  text: 'This is basically a filler tile, where you will see some what useful links. Speaking of links, you should check out my blog about random home automation shannanigans.'
+  text: 'Check out my blog about home automation shannanigans. Itis more of a cheatsheet than a blog at this point.'
 widget2:
   title: "Whats the purpose of this web site?"
   url: 'https://www.awesome-automations.com/info/'
-  image: widget-1-302x182.jpg
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec mattis nisl, sed feugiat purus. Donec at erat nulla. Sed in urna commodo, malesuada risus quis, lobortis nibh. Nulla in ultrices erat. Duis accumsan molestie efficitur. Nullam ac porttitor leo. Praesent mollis mauris a lectus placerat dictum.'
+  image: awesome-1-302x182.jpg
+  text: "To bring all the awesome ideas and automations into a common place for you to get started. The Home Automation community is by far the most creative comunity out there, constantly thinking of automating various things in their life. This site attempts to capture some of that, and we ned your help to make it better!"
   # video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
 widget3:
   title: "Awesome-HA"
   url: 'http://www.awesome-ha.com'
-  image: widget-github-303x182.jpg
+  image: awesome-ha-303x182.jpg
   text: '<em>Awesome Home Assistant</em> is a web site that was started by Franck Nijhof to bring all Home Assistant enthusiats together and provide them with a bunch of awesome github respositories to help them get started and share a common purpose!'
 
 #
