@@ -1,0 +1,14 @@
+{% assign cat = page.url | remove:'/smarthome-devices/' | remove:'/' %}
+<div class="row">
+{% for link in site.data.smartdevices %}
+  {% if link.category == cat %}
+    <ul class="dropdown">
+    {% for dropdown_link in link.dropdown  %}
+        <div class="medium-4 columns t30">
+            <a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}><img src="{{ site.urlimg }}devices/{{dropdown_link.image}}" alt=""><br/>{{ dropdown_link.title | escape }}</a>
+        </div>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
+</div>

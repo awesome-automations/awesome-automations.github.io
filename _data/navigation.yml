@@ -2,9 +2,24 @@
   url: "/"
   side: left
 
-- title: SmartHome Devices
+- title: "SmartHome Devices"
   url: "/smarthome-devices/"
   side: left
+  dropdown:
+  - title: "Smart Switches"
+    url: "/smarthome-devices/switches/"
+  - title: "Cameras"
+    url: "/smarthome-devices/cameras/"
+  - title: "Home Security System"
+    url: "/smarthome-devices/security/"
+  - title: "LED Strips"
+    url: "/smarthome-devices/led/"
+  - title: "Thermostat"
+    url: "/smarthome-devices/thermostat/"
+  - title: "Device Trackers"
+    url: "/smarthome-devices/devicetrackers/"
+  - title: "Zones"
+    url: "/smarthome-devices/zones/"
 
 - title: "Automation Ideas"
   url: "/ideas/"
