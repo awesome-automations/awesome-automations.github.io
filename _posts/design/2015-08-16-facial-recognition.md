@@ -7,8 +7,6 @@ teaser: "<em>Facial Recognition</em> is done using machine learning."
 header:
     image: machine-learning.jpg
     background-color: "#262930"
-    caption: This is a caption for the header image with link
-    caption_url: https://unsplash.com/
 image:
     thumb: machine-learning.jpg
     homepage: machine-learning.jpg
