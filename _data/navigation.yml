@@ -2,13 +2,28 @@
   url: "/"
   side: left
 
-- title: Getting Started
-  url: "/getting-started/"
-  side: left
-
 - title: SmartHome Devices
   url: "/smarthome-devices/"
   side: left
+
+- title: "Automation Ideas"
+  url: "/ideas/"
+  side: left
+  dropdown:
+  - title: "Smart Switches"
+    url: "/ideas/switches/"
+  - title: "Cameras"
+    url: "/ideas/cameras/"
+  - title: "Home Security System"
+    url: "/ideas/security/"
+  - title: "LED Strips"
+    url: "/ideas/switches/"
+  - title: "Thermostat"
+    url: "/ideas/thermostat/"
+  - title: "Device Trackers"
+    url: "/ideas/devicetrackers/"
+  - title: "Zones"
+    url: "/ideas/zones/"
 
 - title: "Templates"
   url: "/design/"
