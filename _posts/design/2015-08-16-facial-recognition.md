@@ -3,7 +3,7 @@ layout: page-fullwidth
 title: "Facial and Object Recognition"
 subheadline: "Using Machinebox.io"
 meta_teaser: "Want to use machine learning to recognize people and objects using your camera feed? Let's get started!"
-teaser: "<em>Facial Recognition</em> is done using machine learning."
+teaser: "<em>Facial Recognition</em> done right using machine learning."
 comments: true
 header:
     image: machine-learning.jpg

@@ -5,7 +5,7 @@ layout: page-fullwidth
 #
 subheadline: "DIY Surveillance Camera"
 title: "DIY Camera with Raspberry PI & WebCam"
-teaser: "Do you want to convert your old web camera as a smart surveillance Camera? Learn how you can connect your old webcam to Raspberry Pi and make it a smart surveillance system here."
+teaser: "Do you want to convert your old web camera into a smart surveillance system? Learn how you can connect your old webcam to Raspberry Pi and make it a smart surveillance system here."
 comments: true
 categories:
   - diy
