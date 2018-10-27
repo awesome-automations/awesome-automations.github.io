@@ -17,9 +17,9 @@ tags:
 #
 header: no
 image:
-    title: mediaplayer_js-title.jpg
-    thumb: mediaplayer_js-thumb.jpg
-    homepage: mediaplayer_js-home.jpg
+    title: diy-surveillance-system.jpg
+    thumb: diy-surveillance-system-thumb.jpg
+    homepage: diy-surveillance-system.jpg
     caption: Photo by Corey Blaz
     caption_url: https://blaz.photography/
 mediaplayer: false
