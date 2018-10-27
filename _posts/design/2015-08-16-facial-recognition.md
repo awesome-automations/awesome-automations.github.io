@@ -5,15 +5,15 @@ subheadline: "Using Machinebox.io"
 meta_teaser: "Want to use machine learning to recognize people and objects using your camera feed? Let's get started!"
 teaser: "<em>Facial Recognition</em> is done using machine learning."
 header:
-    image: homepage_typography.jpg
+    image: machine-learning.jpg
     background-color: "#262930"
     caption: This is a caption for the header image with link
     caption_url: https://unsplash.com/
 image:
-    thumb:  homepage_typography-thumb.jpg
-    homepage: homepage_typography.jpg
+    thumb: machine-learning.jpg
+    homepage: machine-learning.jpg
     caption: Image by Antonio
-    caption_url: "http://www.aisleone.net/"
+    caption_url: "https://unsplash.com/"
 categories:
     - machine learning
     - image processing
