@@ -4,6 +4,7 @@ show_meta: false
 title: "SmartHome Devices"
 subheadline: "A must have devices for your smarthome setup"
 teaser: "Get these devices now, and start your home automation journey!"
+comments: true
 categories:
     - devices
 header:
