@@ -6,7 +6,7 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: header_unsplash_12.jpg
+  image_fullwidth: header_unsplash_13.jpg
 widget1:
   title: "Blog & Portfolio"
   url: 'https://blog.kalavala.net/'
