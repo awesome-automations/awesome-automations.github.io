@@ -1,6 +1,6 @@
-- menu_name: "My Network"
+- menu_name: "Other Useful Sites"
 
-- name: "Awesome Home Assistant"
+- name: "Awesome-HA"
   url: "http://www.awesome-ha.com/"
   class: "network-entypo"
   title: "Awesome-HA by Franck Nijhof"
