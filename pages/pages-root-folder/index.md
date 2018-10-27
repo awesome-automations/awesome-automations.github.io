@@ -11,7 +11,7 @@ widget1:
   title: "Work In Progress"
   url: 'https://blog.kalavala.net/'
   image: wip-1-302x182.jpg
-  text: 'OK - Not sure how you got here, but you shouldn't be here. Close the browser and come back tomorrow or so. If you see this sign again, repeat the steps!'
+  text: "OK - Not sure how you got here, but you shouldn't be here. Close the browser and come back tomorrow or so. If you see this sign again, repeat the steps!"
 widget2:
   title: "Whats the purpose of this web site?"
   url: 'https://www.awesome-automations.com/info/'
