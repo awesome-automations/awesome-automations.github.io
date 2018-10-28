@@ -1,7 +1,8 @@
 ---
-layout: page-fullwidth
+layout: page
+sidebar: right
 show_meta: false
-title: "Home Security System Automation Ideas"
+title: "Home Security System Automation Ideas 💡"
 teaser: "Awesome Home Security System Ideas"
 comments: true
 categories:

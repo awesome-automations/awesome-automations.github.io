@@ -1,46 +1,63 @@
-- title: 'Automation Ideas for Garage'
-  side: left
+- title: "Automation Ideas for Garage"
   category: garage
   dropdown:
   - id: 1
-    emoji: '💡'
-    trigger: Garage Door is Opened
-    condition: if the garage lights are off
-    action: turn on garage lights
+    title: "Turn lights ON when garage doors are opened"
+    trigger: "Garage Door is Opened"
+    condition: "Garage lights are off"
+    action: "Turn ON garage lights"
+    details_url: "garage_1.md"
+    usecase: "Some garages do not have enough lighting, and some times your hands are full coming home from grocery shopping!"
   - id: 2
-    emoji: '💡'
-    trigger: Lights are on for X minutes
-    condition: No motion detected for more than X minutes
-    action: turn off garage lights
+    title: "Turn garage lights OFF after X minutes"
+    trigger: "Lights are on for X minutes"
+    condition: "No motion detected for more than X minutes"
+    action: "Turn OFF garage lights"
+    details_url: 
+    usecase: "Save energy"
   - id: 3
-    emoji: '📱'
-    trigger: Garage doors are open
-    condition: Home Security System is set to away or home mode
-    action: Notify to my mobile
+    title: "Notify garage door state change when security system is ON"
+    trigger: "Garage doors are open"
+    condition: "Home Security System is set to away or home mode"
+    action: "Notify me on my mobile"
+    details_url: 
+    usecase: "You think your home is secured by turning on your home security system, but didn't realize your garage door is open."
   - id: 4
-    emoji: '🔊'
-    trigger: Garage doors are open
-    condition: Home Security System is set home mode
-    action: Notify via TTS
-  - id: 5
-    emoji: '📷'
-    trigger: Garage doors status changed
-    condition: none
-    action: Send me a picture of garage
+    title: "Announce garage door status for every state change"
+    trigger: "Garage doors are open"
+    condition: "Home Security System is set home mode"
+    action: "Notify via TTS"
+    details_url:
+    usecase: "A TTS announcement in the house that someone opened your garage door."
+  - id: "5"
+    title: "Send garage camera snapshot to my email when garage door state changed"
+    trigger: "Garage doors status changed"
+    condition: "None"
+    action: "Send me a picture of garage"
+    details_url:
+    usecase: "When you think you closed the garage door on your way to work, a confirmation picture reassures it!"
 
-- title: 'Automation Ideas for Home Security'
-  side: left
-  category: security
+- title: "Automation Ideas for Home Security"
+  category: "security"
   dropdown:
-  - id: 1
-    trigger: When all family members are away
-    condition: None
-    action: Turn ON Home Security System
-  - id: 2
-    trigger: When Home Security System State Changed
-    condition: None
-    action: Notify my cell phone
-  - id: 3
-    trigger: Home Security System state changed
-    condition: after dark
-    action: Change hallway light color to green when secured, red when unsecured
+  - id: "1"
+    title: "Turn ON Home Security System When everyone is away"
+    trigger: "When all family members are away"
+    condition: "None"
+    action: "Turn ON Home Security System"
+    details_url:
+    usecase: "You are so excited to go on vacation, and you forgot to turn on your home security system. A smart home should take of your home!"
+  - id: "2"
+    title: "Send a text message when Home Security System state changed"
+    trigger: "When Home Security System State Changed"
+    condition: "None"
+    action: "Notify my cell phone"
+    details_url:
+    usecase: "Peace of mind to know your home security status - on/off, away or home!"
+  - id: "3"
+    title: "Light Color Change when Securit System Change"
+    trigger: "Home Security System state changed"
+    condition: "after dark"
+    action: "Change hallway light color to GREEN when secured, and RED when unsecured"
+    details_url:
+    usecase: "A visual indication in the hallway before you open the window... if you see red light, you need to turn your home security system off before opening that door!"

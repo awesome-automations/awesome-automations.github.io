@@ -1,7 +1,8 @@
 ---
-layout: page-fullwidth
+layout: page
+sidebar: right
 show_meta: false
-title: "Thermostat Automation Ideas"
+title: "Thermostat Automation Ideas 💡"
 teaser: "Awesome Thermostat Ideas"
 comments: true
 categories:

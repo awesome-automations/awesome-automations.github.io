@@ -1,7 +1,8 @@
 ---
-layout: page-fullwidth
+layout: page
+sidebar: right
 show_meta: false
-title: "LED Automation Ideas"
+title: "LED Automation Ideas 💡"
 teaser: "Awesome LED Ideas"
 comments: true
 categories:

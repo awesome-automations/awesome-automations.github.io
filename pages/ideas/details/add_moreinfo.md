@@ -2,15 +2,15 @@
 layout: page
 sidebar: right
 show_meta: false
-title: "Zone Automation Ideas 💡"
-teaser: "Awesome Zone related Ideas"
+title: "Automation Ideas 💡"
+teaser: "Add more details"
 comments: true
 categories:
-    - one
+    - devicetracker
     - ideas
 header:
    image_fullwidth: "header_homepage_13.jpg"
-permalink: "/ideas/zone/"
+permalink: "/ideas/details/add_moreinfo/"
 ---
 
-{% include _ideas_categories.html %}
+

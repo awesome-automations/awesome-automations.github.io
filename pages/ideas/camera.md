@@ -1,7 +1,8 @@
 ---
-layout: page-fullwidth
+layout: page
+sidebar: right
 show_meta: false
-title: "Camera Automation Ideas"
+title: "Camera Automation Ideas 💡"
 teaser: "Awesome Camera Ideas"
 comments: true
 categories:

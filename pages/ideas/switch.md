@@ -1,7 +1,8 @@
 ---
-layout: page-fullwidth
+layout: page
+sidebar: right
 show_meta: false
-title: "Switch Automation Ideas"
+title: "Switch Automation Ideas 💡"
 teaser: "Awesome Smart Switch Ideas"
 comments: true
 categories:
