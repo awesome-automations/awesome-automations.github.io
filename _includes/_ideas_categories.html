@@ -1,74 +1,62 @@
 {% assign cat = page.url | remove:'/ideas/' | remove:'/' %}
-<div class="panel radius">
-  <h3>Please Note 📝</h3>
-  <p>
-    The ideas listed on this page <strong>do not</strong> necessarily have all the implementation details such as scripts, and code. This is a list of all possible automations for a specific category, and 
-    is purely meant to "promote" creative thinking among the home-automation enthusiasts 😂
-  </p>
-  <p>
-    If you think of any critical/obvious automations that are missing, or have better automations, <a target="_blank" href="https://github.com/awesome-automations/home/issues/new">please share here!</a>
-  </p>
-</div>
+<h3>Please Note 📝</h3>
+<p>The ideas listed on this page <strong>do not</strong> necessarily have all the implementation details such as scripts, and code. 
+  This is a list of all possible automations for a specific category, and is purely meant to "promote" creative thinking among the home-automation enthusiasts 😂</p>
+<p>If you think of any critical/obvious automations that are missing, or have better automations, <a target="_blank" href="https://github.com/awesome-automations/home/issues/new">please share here!</a></p>
 
 <div class="row">
-<table width="100%">
-  <tr>
-    <td>
-      {% for link in site.data.ideas %}
-        {% if link.category == cat %}
-          {% for dropdown_link in link.dropdown  %}
-          <h4>💡 {{ dropdown_link.title }}</h4><br/>
-          <table width="100%">
-            <tr>
-                <th width="30%">Event/Trigger(s):</th>
-                <td width="70%">
-                  {% assign triggers = dropdown_link.trigger | split: '|' %}
-                  {% for x in triggers %}
-                    {{ forloop.index }}. {{ x }} {% if forloop.index != forloop.length %}, OR {% endif %}
-                    <br/>
-                  {% endfor %}
-                </td>
-            </tr>
-            <tr>
-                <th>Condition(s):</th>
-                <td>
-                    {% assign conditions = dropdown_link.condition | split: '|' %}
-                    {% for y in conditions %}
-                      {{ forloop.index }}. {{ y }} {% if forloop.index != forloop.length %}, AND {% endif %}
-                      <br/>
-                    {% endfor %}
-                </td>
-            </tr>
-            <tr>
-                <th>Action(s):</th>
-                <td>
-                    {% assign actions = dropdown_link.action | split: '|' %}
-                    {% for z in actions %}
-                      {{ forloop.index }}. {{ z }} {% if forloop.index != forloop.length %}, AND {% endif %}
-                      <br/>
-                    {% endfor %}
-                </td>
-            </tr>
-            {% if dropdown_link.usecase %}
-            <tr>
-              <th>Why do you need this automation?</th>
-              <td>{{ dropdown_link.usecase }}</td>
-            </tr>  
-            {% endif %}
-            {% if dropdown_link.details_url %}
-              <tr>
-                <td colspan="2">
-                    ✅&nbsp;Additional details are available for this automation. &nbsp; <a target="_blank" href="{{site.url}}/ideas/details/{{dropdown_link.details_url}}">click here to read more!</a>
-                </td>
-              </tr>
-              {% endif %}
-            </table>
-          {% endfor %}
+  {% for link in site.data.ideas %}
+    {% if link.category == cat %}
+      {% for dropdown_link in link.dropdown  %}
+      <h4>💡 {{ dropdown_link.title }}</h4><br/>
+      <table width="100%">
+        <tr>
+            <th width="30%">Event/Trigger(s):</th>
+            <td width="70%">
+              {% assign triggers = dropdown_link.trigger | split: '|' %}
+              {% for x in triggers %}
+                {{ forloop.index }}. {{ x }} {% if forloop.index != forloop.length %}, OR {% endif %}
+                <br/>
+              {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Condition(s):</th>
+            <td>
+                {% assign conditions = dropdown_link.condition | split: '|' %}
+                {% for y in conditions %}
+                  {{ forloop.index }}. {{ y }} {% if forloop.index != forloop.length %}, AND {% endif %}
+                  <br/>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Action(s):</th>
+            <td>
+                {% assign actions = dropdown_link.action | split: '|' %}
+                {% for z in actions %}
+                  {{ forloop.index }}. {{ z }} {% if forloop.index != forloop.length %}, AND {% endif %}
+                  <br/>
+                {% endfor %}
+            </td>
+        </tr>
+        {% if dropdown_link.usecase %}
+        <tr>
+          <th>Why do you need this automation?</th>
+          <td>{{ dropdown_link.usecase }}</td>
+        </tr>  
         {% endif %}
+        {% if dropdown_link.details_url %}
+          <tr>
+            <td colspan="2">
+                ✅&nbsp;Additional details are available for this automation. &nbsp; <a target="_blank" href="{{site.url}}/ideas/details/{{dropdown_link.details_url}}">click here to read more!</a>
+            </td>
+          </tr>
+          {% endif %}
+        </table>
       {% endfor %}
-    </td>
-  </tr>
-  </table>
+    {% endif %}
+  {% endfor %}
 </div>
 <!-- 
 <div class="row">
