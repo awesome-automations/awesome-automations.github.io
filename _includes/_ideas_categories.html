@@ -8,58 +8,53 @@
   {% for link in site.data.ideas %}
     {% if link.category == cat %}
       {% for dropdown_link in link.dropdown  %}
-      <h4>💡 {{ dropdown_link.title }}</h4><br/>
-      <table width="100%">
-        <tr>
-            <th width="30%">Event/Trigger(s):</th>
-            <td width="70%">
-              {% assign triggers = dropdown_link.trigger | split: '|' %}
-              {% for x in triggers %}
-                {{ forloop.index }}. {{ x }} {% if forloop.index != forloop.length %}, OR {% endif %}
-                <br/>
-              {% endfor %}
-            </td>
-        </tr>
-        <tr>
-            <th>Condition(s):</th>
-            <td>
-                {% assign conditions = dropdown_link.condition | split: '|' %}
-                {% for y in conditions %}
-                  {{ forloop.index }}. {{ y }} {% if forloop.index != forloop.length %}, AND {% endif %}
-                  <br/>
-                {% endfor %}
-            </td>
-        </tr>
-        <tr>
-            <th>Action(s):</th>
-            <td>
-                {% assign actions = dropdown_link.action | split: '|' %}
-                {% for z in actions %}
-                  {{ forloop.index }}. {{ z }} {% if forloop.index != forloop.length %}, AND {% endif %}
-                  <br/>
-                {% endfor %}
-            </td>
-        </tr>
-        {% if dropdown_link.usecase %}
-        <tr>
-          <th>Why do you need this automation?</th>
-          <td>{{ dropdown_link.usecase }}</td>
-        </tr>  
-        {% endif %}
-        {% if dropdown_link.details_url %}
+        <h4>💡 {{ dropdown_link.title }}</h4><br/>
+        <table width="95%">
           <tr>
-            <td colspan="2">
-                ✅&nbsp;Additional details are available for this automation. &nbsp; <a target="_blank" href="{{site.url}}/ideas/details/{{dropdown_link.details_url}}">click here to read more!</a>
-            </td>
+              <th width="30%">Event/Trigger(s):</th>
+              <td width="70%">
+                {% assign triggers = dropdown_link.trigger | split: '|' %}
+                {% for x in triggers %}
+                  {{ forloop.index }}. {{ x }} {% if forloop.index != forloop.length %}, OR {% endif %}
+                  <br/>
+                {% endfor %}
+              </td>
           </tr>
+          <tr>
+              <th>Condition(s):</th>
+              <td>
+                  {% assign conditions = dropdown_link.condition | split: '|' %}
+                  {% for y in conditions %}
+                    {{ forloop.index }}. {{ y }} {% if forloop.index != forloop.length %}, AND {% endif %}
+                    <br/>
+                  {% endfor %}
+              </td>
+          </tr>
+          <tr>
+              <th>Action(s):</th>
+              <td>
+                  {% assign actions = dropdown_link.action | split: '|' %}
+                  {% for z in actions %}
+                    {{ forloop.index }}. {{ z }} {% if forloop.index != forloop.length %}, AND {% endif %}
+                    <br/>
+                  {% endfor %}
+              </td>
+          </tr>
+          {% if dropdown_link.usecase %}
+          <tr>
+            <th>Why do you need this automation?</th>
+            <td>{{ dropdown_link.usecase }}</td>
+          </tr>
+          {% endif %}
+          {% if dropdown_link.details_url %}
+            <tr>
+              <td colspan="2">
+                ✅&nbsp;Additional details are available for this automation. &nbsp; <a target="_blank" href="{{site.url}}/ideas/details/{{dropdown_link.details_url}}"> click here to read more! </a>
+              </td>
+            </tr>
           {% endif %}
         </table>
       {% endfor %}
     {% endif %}
   {% endfor %}
 </div>
-<!-- 
-<div class="row">
-    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=12&l=ur1&category=amz_dvcs_oct2018_sh&banner=1R9T17A3T3B0ZXNW1982&f=ifr&linkID=fb5366bd01540e47bd756e134067fe74&t=skalavala-20&tracking_id=skalavala-20" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-</div> 
--->
