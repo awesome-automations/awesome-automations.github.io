@@ -1,4 +1,15 @@
 {% assign cat = page.url | remove:'/ideas/' | remove:'/' %}
+<div class="panel radius">
+  <h3>Please Note 📝</h3>
+  <p>
+    The ideas listed on this page <strong>do not</strong> necessarily have all the implementation details such as scripts, and code. This is a list of all possible automations for a specific category, and 
+    is purely meant to "promote" creative thinking among the home-automation enthusiasts 😂
+  </p>
+  <p>
+    If you think of any critical/obvious automations that are missing, or have better automations, <a target="_blank" href="https://github.com/awesome-automations/home/issues/new">please share here!</a>
+  </p>
+</div>
+
 <div class="row">
 <table width="100%">
   <tr>
@@ -51,9 +62,6 @@
                 </td>
               </tr>
               {% endif %}
-              <tr>
-              <th colspan="2">&nbsp;</th>
-            </tr>
             </table>
           {% endfor %}
         {% endif %}

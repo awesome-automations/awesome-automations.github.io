@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: page-fullwidth
 show_meta: false
-sidebar: right
 title: "Garage Automation Ideas 💡"
 teaser: "Awesome Garage Ideas"
 comments: true

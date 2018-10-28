@@ -1,6 +1,5 @@
 ---
-layout: page
-sidebar: right
+layout: page-fullwidth
 show_meta: false
 title: "Home Security System Automation Ideas 💡"
 teaser: "Awesome Home Security System Ideas"

@@ -1,6 +1,5 @@
 ---
-layout: page
-sidebar: right
+layout: page-fullwidth
 show_meta: false
 title: "Device Tracker Automation Ideas 💡"
 teaser: "Awesome Device Tracker Ideas"

@@ -1,6 +1,5 @@
 ---
-layout: page
-sidebar: right
+layout: page-fullwidth
 show_meta: false
 title: "Camera Automation Ideas 💡"
 teaser: "Awesome Camera Ideas"
