@@ -1,14 +1,15 @@
 ---
 layout: page-fullwidth
 show_meta: false
-#title: "Getting Started"
+title: "Getting Started"
 #subheadline: "A Step-by-Step Guide"
 #teaser: "This step-by-step guide to help you navigate this awesome-automations.com site"
+categories:
+    - ideas
 header:
    image_fullwidth: "header_unsplash_22.jpg"
 permalink: "/getting-started/"
 ---
-# Getting Started
 
 Welcome to the <strong>awesome-automations.com</strong> web site! This web site is dedicated to those awesome people, who think outside the box and come up with the craziest and the most creative ideas in the home automation space!. As the name suggests, this web site is focused more on  "automations" aspect of the smart home world.
 
@@ -20,7 +21,7 @@ Welcome to the <strong>awesome-automations.com</strong> web site! This web site 
 
 <p>The automations help you take actions based on certain events and state changes. For example, when you have a smart light bulb and a motion sensor, your automation can help you turn on the light when motion is detected. In this case, the "motion detected" is an event that <strong><i>triggers</i></strong> the automation, and "turning on the light" is the <strong><i>action</i></strong> that is performed. You can add additional <strong><i>conditions</i></strong> and make that automation run only under certain circumstances - like <i>run this automation only when is it is dark inside</i>.</p>
 
-So, a typical automation at least consists of three components if not more - Trigger, Action, and Condition. Once you understand this little concept, everything else becomes easy to follow!
+So, a typical automation at least consists of three components if not more - Trigger, Action, and Condition. You can have multiple triggers, multiple conditions, and can perform multiple actions in a given automation. Once you understand this little concept, everything else becomes easy to follow!
 
 The <a href="/ideas/">automations</a> section basically captures those elements in-depth, by combining data coming from various sensors/devices with actions and conditions. The more devices you have the more combinations of automations you can write, and your smart home set up can quickly becomes much smarter!
 
