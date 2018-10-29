@@ -1,53 +1,136 @@
+# ASCII ART: http://patorjk.com/software/taag/#p=display&f=Big
+###############################################################################
+#    _____                            
+#   / ____|                           
+#  | |  __  __ _ _ __ __ _  __ _  ___ 
+#  | | |_ |/ _` | '__/ _` |/ _` |/ _ \
+#  | |__| | (_| | | | (_| | (_| |  __/
+#   \_____|\__,_|_|  \__,_|\__, |\___|
+#                           __/ |     
+#                          |___/      
+###############################################################################
 - title: "Automation Ideas for Garage"
   category: garage
   dropdown:
-  - id: 1
+  - id: "1"
     title: "Turn lights ON when garage doors are opened"
     trigger: "Garage Door is Opened"
     condition: "Garage lights are off"
     action: "Turn ON garage lights"
     details_url: "garage_1.md"
-    usecase: "Some garages do not have enough lighting, and some times your hands are full coming home from grocery shopping!"
-  - id: 2
+    usecase: >
+      Some garages do not have enough lighting, and some times your hands are 
+      full coming home from grocery shopping!
+
+  - id: "2"
     title: "Turn garage lights OFF after X minutes"
     trigger: "Lights are on for X minutes"
     condition: "No motion detected for more than X minutes"
     action: "Turn OFF garage lights"
     details_url: 
     usecase: "Save energy"
-  - id: 3
+
+  - id: "3"
     title: "Notify garage door state change when security system is ON"
     trigger: "Garage doors are open"
     condition: "Home Security System is set to away or home mode"
     action: "Notify me on my mobile"
     details_url: 
-    usecase: "You think your home is secured by turning on your home security system, but didn't realize your garage door is open."
-  - id: 4
+    usecase: >
+      You think your home is secured by turning on your home security system, 
+      but didn't realize your garage door is open.
+
+  - id: "4"
     title: "Announce garage door status for every state change"
     trigger: "Garage doors are open"
     condition: "Home Security System is set home mode"
     action: "Notify via TTS"
     details_url:
-    usecase: "A TTS announcement in the house that someone opened your garage door."
+    usecase: >
+      A TTS announcement in the house that someone opened your garage door."
+
   - id: "5"
-    title: "Send garage camera snapshot to my email when garage door state changed"
+    title: "Email garage camera snapshot when garage door state changed"
     trigger: "Garage doors status changed"
     condition: "None"
-    action: "Send me a picture of garage"
+    action: "Email me a picture of garage"
     details_url:
-    usecase: "When you think you closed the garage door on your way to work, a confirmation picture reassures it!"
+    usecase: >
+      When you think you closed the garage door on your way to work, 
+      a confirmation picture reassures it!
 
+###############################################################################
+#    _____         _ _       _     
+#   / ____|       (_) |     | |    
+#  | (_____      ___| |_ ___| |__  
+#   \___ \ \ /\ / / | __/ __| '_ \ 
+#   ____) \ V  V /| | || (__| | | |
+#  |_____/ \_/\_/ |_|\__\___|_| |_|
+###############################################################################
 - title: "Automation Ideas for Lights & Switches"
   category: switch
   dropdown:
-  - id: 1
+  - id: "1"
     title: "Make switches timer enabled"
     trigger: "When a switch turned ON"
     condition: "Timer Mode (an input boolean) is ON"
     action: "Start the timer"
     details_url: 
-    usecase: "Smart switches can also be used as timer based switches. Once the switch is turned on, it starts the timer, and when the timer is elapsed, the switch is turned off. Combine this with motion sensors and other other data to make it more interesting!"
+    usecase: >
+      Smart switches can also be used as timer based switches. 
+      Once the switch is turned on, it starts the timer, and when the timer 
+      is elapsed, the switch is turned off. Combine this with motion sensors 
+      and other other data to make it more interesting!"
 
+###############################################################################
+#    _____                               
+#   / ____|                              
+#  | |     __ _ _ __ ___   ___ _ __ __ _ 
+#  | |    / _` | '_ ` _ \ / _ \ '__/ _` |
+#  | |___| (_| | | | | | |  __/ | | (_| |
+#   \_____\__,_|_| |_| |_|\___|_|  \__,_|
+###############################################################################
+- title: "Automation Ideas for Cameras"
+  category: camera
+  dropdown:
+  - id: "1"
+    title: "Image Processing"
+    trigger: > 
+      Camera-1 motion detected|
+      Camera-2 motion detected|
+      Camera-3 motion detected
+    condition: "Last executed is more than 60 seconds"
+    action: "Recognize objects and people and update sensors"
+    details_url: 
+    usecase: >
+      To know who is out there! Whenever the cameras detect motion, feed the 
+      camera image and recognize people and objects in it, and update the sensors. 
+      Then have an automation that alerts on the sensor change.
+
+  - id: "2"
+    title: "Motion Detected On Camera"
+    trigger: "When motion detected from camera's point of view"
+    condition: "When Alert mode is ON"
+    action: >
+      Take snapshot of all camera images, and save it to a local file|
+      Email images as an attachment|
+      When Home, send a iOS notification with the camera's live feed"
+    details_url: 
+    usecase: >
+      To know who is out there! This comes in handy when you are not home, 
+      and you do not have access to your camera feed directly. 
+      At least you have access to email and check images."
+
+###############################################################################
+#    _____                      _ _         
+#   / ____|                    (_) |        
+#  | (___   ___  ___ _   _ _ __ _| |_ _   _ 
+#   \___ \ / _ \/ __| | | | '__| | __| | | |
+#   ____) |  __/ (__| |_| | |  | | |_| |_| |
+#  |_____/ \___|\___|\__,_|_|  |_|\__|\__, |
+#                                      __/ |
+#                                     |___/ 
+###############################################################################
 - title: "Automation Ideas for Home Security"
   category: "security"
   dropdown:
@@ -57,18 +140,140 @@
     condition: "None"
     action: "Turn ON Home Security System"
     details_url:
-    usecase: "You are so excited to go on vacation, and you forgot to turn on your home security system. A smart home should take of your home!"
+    usecase: >
+      You are so excited to go on vacation, and you forgot to turn on your 
+      home security system. A smart home should take of your home!"
+
   - id: "2"
     title: "Send a text message when Home Security System state changed"
     trigger: "When Home Security System State Changed"
     condition: "None"
     action: "Notify my cell phone"
     details_url:
-    usecase: "Peace of mind to know your home security status - on/off, away or home!"
+    usecase: >
+      Peace of mind to know your home security status - on/off, away or home!"
+
   - id: "3"
-    title: "Light Color Change when Securit System Change"
+    title: "Change light bulb color when security system state changes"
     trigger: "Home Security System state changed"
     condition: "after dark"
     action: "Change hallway light color to GREEN when secured, and RED when unsecured"
     details_url:
-    usecase: "A visual indication in the hallway before you open the window... if you see red light, you need to turn your home security system off before opening that door!"
+    usecase: >
+      A visual indication in the hallway before you open the window... 
+      if you see red light, you need to turn your home security system off 
+      before opening that door!
+
+  - id: "4"
+    title: "Home Security System WatchDog"
+    trigger: "Home Security System state changed to unarmed/off"
+    condition: "after dark (optional)|Home Security System 'nag' mode is ON"
+    action: "Continue to nag every 5 minutes to turn ON the home Security system"
+    details_url:
+    usecase: >
+      Sometimes we forget to turn ON home secutity system, this automation 
+      reminds you every 5 minutes until you turn it ON, or disable the 'nag' mode
+
+###############################################################################
+#   _______ _                                   _        _   
+#  |__   __| |                                 | |      | |  
+#     | |  | |__   ___ _ __ _ __ ___   ___  ___| |_ __ _| |_ 
+#     | |  | '_ \ / _ \ '__| '_ ` _ \ / _ \/ __| __/ _` | __|
+#     | |  | | | |  __/ |  | | | | | | (_) \__ \ || (_| | |_ 
+#     |_|  |_| |_|\___|_|  |_| |_| |_|\___/|___/\__\__,_|\__|
+###############################################################################
+                                                           
+- title: "Automation Ideas for Thermostat"
+  category: thermostat
+  dropdown:
+  - id: "1"
+    title: "Set to Away/Eco mode when no one at home"
+    trigger: "When nobody is home"
+    condition: "For more than 30 minutes"
+    action: >
+      Set the thermostat to eco/away mode|
+      turn off all indoor lights| 
+      if it is dark outside, turn on outdoor lights
+    details_url: 
+    usecase: "Power/Money saving"
+
+  - id: "2"
+    title: "Turn On Thermostat when someone home"
+    trigger: >
+      When a family member enters home|
+      Someone is driving towards home and within 5-10 miles away (proximity sensor)"
+    condition: "Thermostart is in OFF/Eco mode"
+    action: "Turn ON thermostat which inturn heats/cools the house."
+    details_url: 
+    usecase: "Power/Money saving, Convenience, keep your house warm/cool"
+
+  - id: "3"
+    title: "Power Saving Mode - 3 hour mode"
+    trigger: "When the Air Condition unit is running for 3 hours"
+    condition: "Power saving mode is ON"
+    action: "Turn OFF air condition unit."
+    details_url: 
+    usecase: "Power/Money saving"
+
+###############################################################################
+#   ______                
+#  |___  /                
+#     / / ___  _ __   ___ 
+#    / / / _ \| '_ \ / _ \
+#   / /_| (_) | | | |  __/
+#  /_____\___/|_| |_|\___|
+###############################################################################
+- title: "Automation Ideas for Zones"
+  category: zone
+  dropdown:
+  - id: "1"
+    title: "Alert when someone enters or leaves a zone"
+    trigger: "When someone enters or leaves a zone"
+    condition: "For more than 5 minutes"
+    action: "Alert using Notify component|Alert using TTS when someone home"
+    details_url: 
+    usecase: >
+      Letting family members know the whereabouts of other family members, 
+      when you leave work, upon knowing, wife may call you to bring home some flowers, 
+      or kids may remind you to buy ice cream for them!"
+
+###############################################################################
+#   _____             _       _______             _             
+#  |  __ \           (_)     |__   __|           | |            
+#  | |  | | _____   ___  ___ ___| |_ __ __ _  ___| | _____ _ __ 
+#  | |  | |/ _ \ \ / / |/ __/ _ \ | '__/ _` |/ __| |/ / _ \ '__|
+#  | |__| |  __/\ V /| | (_|  __/ | | | (_| | (__|   <  __/ |   
+#  |_____/ \___| \_/ |_|\___\___|_|_|  \__,_|\___|_|\_\___|_|   
+###############################################################################
+- title: "Automation Ideas for Device Trackers"
+  category: devicetracker
+  dropdown:
+  - id: "1"
+    title: "Alert device tracker status change"
+    trigger: "When device tracker status becomes offline"
+    condition: "For more than 5 minutes"
+    action: "Alert using Notify component|Alert using TTS when someone home"
+    details_url: 
+    usecase: >
+      To keep an eye on things, making sure the servers and services are 
+      running as expected"
+
+###############################################################################
+#   __  __          _ _       
+#  |  \/  |        | (_)      
+#  | \  / | ___  __| |_  __ _ 
+#  | |\/| |/ _ \/ _` | |/ _` |
+#  | |  | |  __/ (_| | | (_| |
+#  |_|  |_|\___|\__,_|_|\__,_|
+###############################################################################                            
+- title: "Automation Ideas for Media Players"
+  category: media
+  dropdown:
+  - id: "1"
+    title: "TV Time"
+    trigger: "When TV is turned ON"
+    condition: "None"
+    action: "Turn Off Lights"
+    details_url: 
+    usecase: "To increase the TV viewing experience, and get you in the mood."
+

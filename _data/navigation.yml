@@ -1,6 +1,10 @@
 - title: Home
   url: "/"
   side: left
+  
+- title: Getting Started
+  url: "/getting-started/"
+  side: left
 
 - title: "SmartHome Devices"
   url: "/smarthome-devices/"
@@ -51,6 +55,8 @@
     url: "/ideas/zone/"
   - title: "Garage"
     url: "/ideas/garage/"
+  - title: "Media Players"
+    url: "/ideas/media/"
 
 - title: Blog
   url: "/blog/"

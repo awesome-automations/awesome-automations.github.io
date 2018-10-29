@@ -8,21 +8,20 @@ layout: frontpage
 header:
   image_fullwidth: header_unsplash_13.jpg
 widget1:
-  title: "Work In Progress"
-  url: 'https://blog.kalavala.net/'
-  image: wip-1-302x182.jpg
-  text: "OK - Not sure how you got here, but you shouldn't be here. Close the browser and come back tomorrow or so. If you see this sign again, repeat the steps!"
+  title: "Hello & Welcome to our web site!"
+  url: '/getting-started/'
+  image: 'welcome-1-302x182.jpg'
+  text: "Welcome to the <strong>awesome-automations</strong> web site! We are excited to bring you all of the cool and wonderful automations into one place to help with your home automation and smart-home setup. There are a few things that you need in your setup prior to leveraging the automations we have on this web site. Let's get started!"
 widget2:
-  title: "Whats the purpose of this web site?"
-  url: 'https://www.awesome-automations.com/info/'
+  title: "What's the purpose of this web site?"
+  url: '/info/'
   image: awesome-1-302x182.jpg
-  text: "To bring all the awesome ideas and automations into a common place for you to get started. The Home Automation community is by far the most creative comunity out there, constantly thinking of automating various things in their life. This site attempts to capture some of that, and we ned your help to make it better!"
-  # video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""/></a>'
+  text: "To bring all the <strong>awesome</strong> ideas and automations into a central place for you to get started. The Home Automation community is by far the most creative comunity out there, constantly thinking of automating various things in their life. This site captures the essence of that, and we ned your help to make it better!"
 widget3:
-  title: "Awesome-HA"
+  title: "Awesome-HA Just for you!"
   url: 'http://www.awesome-ha.com'
   image: awesome-ha-303x182.jpg
-  text: '<em>Awesome Home Assistant</em> is a web site that was started by Franck Nijhof to bring all Home Assistant enthusiats together and provide them with a bunch of awesome github respositories to help them get started and share a common purpose!'
+  text: "<em><strong>Awesome</strong> Home Assistant</em> is a web site that was started by Franck Nijhof to bring all Home Assistant enthusiats together and provide them with a bunch of awesome github respositories to help them get started and share a common purpose! If you haven't visited the awesome-ha.com site, click on the link below!"
 
 #
 # Use the call for action to show a button on the frontpage
@@ -44,12 +43,4 @@ permalink: /index.html
 # this page as active in the topbar navigation
 #
 homepage: true
-comments: true
 ---
-
-<!-- <div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div> -->
