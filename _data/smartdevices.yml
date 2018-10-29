@@ -20,7 +20,7 @@
   - title: Wemo Switches
     url: http://amzn.to/2pairYc
     image: wemo-light-switches.jpg
-  - title: ZWave Wallmotes
+  - title: Z-Wave Wallmotes
     url: http://amzn.to/2DK11G5
     image: wall-mote.jpg
 
@@ -81,11 +81,11 @@
     url: http://amzn.to/2FLRnTI
     image: window-sensor.jpg
 
-- title: 'ZWave Devices'
+- title: 'Z-Wave Devices'
   side: left
   category: zwave
   dropdown:
-  - title: Aeotec ZWave Gen5 Stick
+  - title: Aeotec Z-Wave Gen5 Stick
     url: http://amzn.to/2pa9uhO
     image: aeltec-zwave-stick.jpg
   - title: Aeotec Energy Meter
@@ -122,7 +122,7 @@
   - title: Garage Door Tilt Sensors
     url: http://amzn.to/2DHQNWu
     image: garage-tilt-sensor.jpg
-  - title: ZWave Garage Relay
+  - title: Z-Wave Garage Relay
     url: http://amzn.to/2pV2wu1
     image: garage-relay.jpg
 

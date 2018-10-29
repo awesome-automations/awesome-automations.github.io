@@ -22,7 +22,7 @@
     url: "/smarthome-devices/led/"
   - title: "Thermostat"
     url: "/smarthome-devices/thermostat/"
-  - title: "zwave"
+  - title: "Z-Wave"
     url: "/smarthome-devices/zwave/"
   - title: "Multimedia"
     url: "/smarthome-devices/media/"

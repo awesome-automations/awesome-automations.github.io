@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
 show_meta: false
-title: "SmartHome Devices"
-#subheadline: "A must have devices for your smarthome setup"
+title: "Smart Home Devices"
+#subheadline: "A must have devices for your smart home setup"
 teaser: "Get these devices now, and start your home automation journey!"
 categories:
     - devices
