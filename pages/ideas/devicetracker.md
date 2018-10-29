@@ -2,7 +2,7 @@
 layout: page-fullwidth
 show_meta: false
 title: "Device Tracker Automation Ideas 💡"
-teaser: "Awesome Device Tracker Ideas"
+#teaser: "Awesome Device Tracker Ideas"
 comments: true
 categories:
     - devicetracker

@@ -7,7 +7,7 @@ categories:
     - home security
     - devices
 header:
-   image_fullwidth: "header_homepage_13.jpg"
+   image_fullwidth: "header_unsplash_28.jpg"
 permalink: "/smarthome-devices/security/"
 ---
 

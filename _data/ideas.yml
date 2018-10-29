@@ -37,6 +37,17 @@
     details_url:
     usecase: "When you think you closed the garage door on your way to work, a confirmation picture reassures it!"
 
+- title: "Automation Ideas for Lights & Switches"
+  category: switch
+  dropdown:
+  - id: 1
+    title: "Make switches timer enabled"
+    trigger: "When a switch turned ON"
+    condition: "Timer Mode (an input boolean) is ON"
+    action: "Start the timer"
+    details_url: 
+    usecase: "Smart switches can also be used as timer based switches. Once the switch is turned on, it starts the timer, and when the timer is elapsed, the switch is turned off. Combine this with motion sensors and other other data to make it more interesting!"
+
 - title: "Automation Ideas for Home Security"
   category: "security"
   dropdown:

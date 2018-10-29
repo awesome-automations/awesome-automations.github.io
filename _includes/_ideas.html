@@ -1,15 +1,6 @@
-{% for link in site.data.ideas %}
-## {{ link.title }}:
-  <div class="row">
-    <ul class="dropdown">
-      {% for dropdown_link in link.dropdown %}
-        <div class="medium-4 columns t30">
-            <h2>{{ dropdown_link.title }}</h2>
-            Trigger(s): {{ dropdown_link.trigger}}<br/>
-            Condition(s): {{ dropdown_link.condition}}<br/>
-            Actions(s): {{ dropdown_link.action}}<br/>
-        </div>
-      {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
+<p>Here are some of the categories currently available. Click on the link to view corresponding set of 'awesome' automations</p>
+<div class="row">
+  {% for link in site.data.ideas %}
+    <h4><a href="{{site.url}}/ideas/{{link.category}}/">🔲&nbsp; {{ link.category |capitalize }}</a></h4>
+  {% endfor %}
+</div>

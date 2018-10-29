@@ -1,11 +1,12 @@
 {% assign cat = page.url | remove:'/ideas/' | remove:'/' %}
+<div class="row">
 <div class="panel radius">
   <h3>Please Note 📝</h3>
   <p>The ideas listed on this page <strong>do not</strong> necessarily have all the implementation details such as scripts, and code. 
-    This is a list of all possible automations for a specific category, and is purely meant to "promote" creative thinking among the home-automation enthusiasts 😂</p>
+    This is a list of all possible automations for '{{ cat }}' category, and is purely meant to promote creative thinking among the home-automation enthusiasts 😂</p>
   <p>If you think of any critical/obvious automations that are missing, or have better automations, <a target="_blank" href="https://github.com/awesome-automations/home/issues/new">please share here!</a></p>
 </div>
-
+</div>
 <div class="row">
   {% for link in site.data.ideas %}
     {% if link.category == cat %}
@@ -59,4 +60,7 @@
       {% endfor %}
     {% endif %}
   {% endfor %}
+</div>
+<div class="row">
+  <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=48&l=ez&f=ifr&linkID=254c5df05a98bc15f8834929dbf41eb1&t=skalavala-20&tracking_id=skalavala-20" width="95%" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 </div>

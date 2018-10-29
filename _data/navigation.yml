@@ -35,7 +35,7 @@
   url: "/ideas/"
   side: left
   dropdown:
-  - title: "Smart Switches"
+  - title: "Lights & Switches"
     url: "/ideas/switch/"
   - title: "Cameras"
     url: "/ideas/camera/"

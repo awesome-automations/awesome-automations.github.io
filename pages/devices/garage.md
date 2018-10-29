@@ -7,7 +7,7 @@ categories:
     - garage
     - devices
 header:
-   image_fullwidth: "header_homepage_13.jpg"
+   image_fullwidth: "header_unsplash_30.jpg"
 permalink: "/smarthome-devices/garage/"
 ---
 

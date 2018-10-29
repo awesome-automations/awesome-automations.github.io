@@ -2,7 +2,7 @@
 layout: page-fullwidth
 show_meta: false
 title: "Zone Automation Ideas 💡"
-teaser: "Awesome Zone related Ideas"
+#teaser: "Awesome Zone related Ideas"
 comments: true
 categories:
     - one
