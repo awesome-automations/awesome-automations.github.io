@@ -24,7 +24,7 @@
     url: "/smarthome-devices/thermostat/"
   - title: "zwave"
     url: "/smarthome-devices/zwave/"
-  - title: "Multi-media"
+  - title: "Multimedia"
     url: "/smarthome-devices/media/"
   - title: "Garage"
     url: "/smarthome-devices/garage/"
