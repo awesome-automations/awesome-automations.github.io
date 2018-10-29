@@ -9,8 +9,6 @@ header:
 permalink: "/getting-started/"
 ---
 
-# Getting Started
-
 Welcome to the <strong>awesome-automations.com</strong> web site! This web site is dedicated to those awesome people, who think outside the box and come up with the craziest and the most creative ideas in the home automation space!. As the name suggests, this web site is focused more on  "automations" aspect of the smart home world.
 
 <h3>Smart Home, a.k.a Home Automation</h3>
