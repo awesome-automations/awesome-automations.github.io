@@ -9,13 +9,3 @@
   url: "http://home-assistant.io/"
   class: "services-newsletter"
   title: "Awesome Home Assistant"
-
-# - name: "Images by Unsplash"
-#   url: "http://unsplash.com/"
-#   class: "rss-link"
-#   title: "Images by Unsplash"
-
-# - name: "Using Backstretch by Scott Robbin"
-#   url: "http://srobbin.com/jquery-plugins/backstretch/"
-#   class: "sitemap-link"
-#   title: "Using Backstretch by Scott Robbin"
