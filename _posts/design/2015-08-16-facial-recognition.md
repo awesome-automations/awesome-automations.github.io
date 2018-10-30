@@ -3,20 +3,18 @@ layout: page-fullwidth
 title: "Facial and Object Recognition"
 subheadline: "Using Machinebox.io"
 meta_teaser: "Want to use machine learning to recognize people and objects using your camera feed? Let's get started!"
-teaser: "<em>Facial Recognition</em> done right using machine learning."
+teaser: "<em>Facial Recognition</em> using machine learning. Use machine learning technology to see what's on your camera feed, and alert you when it finds something of interest to you!"
 comments: true
 header:
-    image: machine-learning.jpg
-    background-color: "#262930"
+    image_fullwidth: header_unsplash_32.jpg
 image:
     thumb: machine-learning.jpg
     homepage: machine-learning.jpg
-    caption: Image by Antonio
-    caption_url: "https://unsplash.com/"
 categories:
     - machine learning
     - image processing
     - camera
+permalink: "/blog/facial-recognition/"
 ---
 
 ## Facial Recognition using Machine Learning
@@ -116,6 +114,6 @@ for /F %%x in ('dir /B/D %localdir%') do (
 
 echo Done processing pictures.
 ```
-## Note (updpate October, 2018)
+## Note (Update as of October, 2018)
 
-Machinebox recently announced that they support saving the state for free subscription as well. Once you train the faces, you do not need to re-train after restart.
+Machinebox recently announced that they support saving the state for free subscription as well. That means, once you train the faces, you do not need to re-train after every restart.

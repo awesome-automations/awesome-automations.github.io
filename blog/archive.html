@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Ramblings & Shenanigans Archive"
-teaser: "Check out all blog posts in my blog archive. Click on a headline to read the teaser."
+#teaser: "Click on a headline to read more information about the topic."
 breadcrumb: true
 header:
    image_fullwidth: header_unsplash_8.jpg
@@ -16,7 +16,7 @@ permalink: "blog/archive/"
 			{% assign counter = 1 %}
 			{% for post in site.posts limit:1000 %}
 			<dd class="accordion-navigation">
-			<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
+				&nbsp;<a href="#panel{{ counter }}"><span class="iconfont"></span> {% if post.subheadline %}{{ post.subheadline }} › {% endif %}<strong>{{ post.title }}</strong></a>
 				<div id="panel{{ counter }}" class="content">
 					{% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
 					<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a><br><br>

@@ -1,8 +1,8 @@
 ---
 layout: page-fullwidth
-subheadline: "DIY Surveillance Camera"
-title: "DIY Camera with Raspberry PI & Web Cam"
-teaser: "Do you want to convert your old web camera into a smart surveillance system? Learn how you can connect your old web cam to Raspberry Pi and make it a smart surveillance system here."
+subheadline: "DIY Surveillance System"
+title: "DIY Surveillance system using Raspberry PI & Web Camera"
+teaser: "Do you want to convert your old web camera into a smart surveillance system? Learn how you can connect your old web camera to Raspberry Pi and make it a smart surveillance system here with full motion detection and video capture capabilities."
 comments: true
 categories:
   - diy
@@ -15,6 +15,7 @@ image:
     thumb: diy-surveillance-system-thumb.jpg
     homepage: diy-surveillance-system.jpg
 mediaplayer: false
+permalink: "/blog/diy-surveillance/"
 ---
 
 ## Using USB Camera/Web cam with Home Assistant 
