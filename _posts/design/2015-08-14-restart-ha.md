@@ -8,7 +8,7 @@ comments: true
 header:
   image_fullwidth: header_unsplash_31.jpg
 image:
-    thumb: usps.jpg
+    thumb: homeassistant.png
     homepage: header_unsplash_31.jpg
 categories:
     - homeassistant
