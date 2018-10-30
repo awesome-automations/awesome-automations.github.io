@@ -6,10 +6,10 @@ meta_teaser: "How do you restart or upgrade your Home Assistant system?"
 teaser: "Here is how you can simply restart or upgrade your home assistant system using a few mouse clicks instead of using SSH or console. This comes in handy when you are too lazy to log into your Home Assistant server to do the restart or upgrade to a newer version."
 comments: true
 header:
-  image_fullwidth: header_unsplash_31.jpg
+  image_fullwidth: header_unsplash_20.jpg
 image:
     thumb: homeassistant.png
-    homepage: header_unsplash_31.jpg
+    homepage: header_unsplash_20.jpg
 categories:
     - homeassistant
 permalink: "/blog/restart-ha/"    
