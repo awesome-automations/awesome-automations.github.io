@@ -1,0 +1,23 @@
+<div>
+    {% for link in site.data.navigation %}
+
+        {% if link.url contains 'http' %}
+            {% assign domain = '' %}
+        {% elsif link.url == '#' %}
+            {% assign domain = '' %}
+        {% else %}
+            {% assign domain = site.url %}
+        {% endif %}
+
+        {% if link.type == 'jinja' %}
+        {% for dropdown_link in link.dropdown %}
+            {% if dropdown_link.url contains 'http' %}
+                {% assign domain = '' %}
+            {% else %}
+                {% assign domain = site.url %}
+            {% endif %}
+            <h4><a href="{{site.url}}{{dropdown_link.url}}">🔲&nbsp; {{ dropdown_link.title |capitalize }}</a></h4>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</div>

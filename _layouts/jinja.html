@@ -1,0 +1,19 @@
+---
+layout: default
+format: jinja-index
+# Don't index these pages dear Google.
+noindex: true
+comments: true
+---
+
+<div class="row">
+	<div class="medium-8 columns t30">
+		<h1>Jinja Sample Code Index</h1>
+		<br/>
+		{% include _jinja_content.html %}
+	</div><!-- /.medium-7.columns -->
+
+	<div class="medium-4 columns t30">
+		{% include _jinja_sidebar.html %}
+	</div><!-- /.medium-5.columns -->
+</div><!-- /.row -->
