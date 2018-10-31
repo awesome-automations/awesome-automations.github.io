@@ -8,7 +8,7 @@ comments: true
 header:
     image_fullwidth: header_unsplash_34.jpg
 image:
-    thumb: multi-room-audio.jpg
+    thumb: bluetooth.jpg
     homepage: header_unsplash_34.jpg
 categories:
     - bluetooth device tracker
