@@ -5,12 +5,25 @@ format: jinja-index
 noindex: true
 comments: true
 ---
-
 <div class="row">
 	<div class="medium-8 columns t30">
-		<h1>Jinja Sample Code Index</h1>
-		<br/>
-		{% include _jinja_content.html %}
+		<h1>Jinja2</h1>
+		<p>The following is an example on how to run in your python environment:</p>
+{%raw%}
+<pre>
+$ python3
+>>> from jinja2 import Template
+>>> t = Template("Hello {{ something }}!")
+>>> t.render(something="World")
+u'Hello World!'
+
+>>> t = Template("My favorite numbers: {% for n in range(1,10) %}{{n}} " "{% endfor %}")
+>>> t.render()
+u'My favorite numbers: 1 2 3 4 5 6 7 8 9 '
+</pre>
+{%endraw%}
+	<h3>Jinja Helper Code</h3>
+	{% include _jinja_content.html %}
 	</div><!-- /.medium-7.columns -->
 
 	<div class="medium-4 columns t30">

@@ -1,9 +1,9 @@
 ---
 layout: page-fullwidth
-title: "Iterate through entities"
-subheadline: "entities?"
-meta_teaser: "How to iteate entities ..."
-teaser: "Here is how you can iterate through tntities."
+title: "List all entities & attributes"
+#subheadline: "List all entities and their attributes"
+#meta_teaser: "How to iteate entities ..."
+#teaser: "Here is how you can iterate through entities."
 comments: true
 header:
   image_fullwidth: header_unsplash_16.jpg
