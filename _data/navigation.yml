@@ -58,14 +58,6 @@
   - title: "Media Players"
     url: "/ideas/media/"
 
-- title: "Jinja Samples"
-  url: "/jinja/"
-  side: left
-  type: jinja
-  dropdown:
-  - title: "List all Entity IDs"
-    url: "/jinja/entities/"
-
 - title: Blog
   url: "/blog/"
   side: left

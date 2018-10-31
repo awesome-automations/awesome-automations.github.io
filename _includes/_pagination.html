@@ -7,7 +7,6 @@
 {% endcomment %}
 
 {% for post in paginator.posts %}
-  {% unless post.url contains '/jinja/' %} <!-- do not show jinja specific items as part of blog items -->
     <div class="row">
       <div class="small-12 columns b60">
         <p class="subheadline">{{ post.categories | join: ' &middot; ' | prepend: '<span class="subheader">' | append: '</span>' }}{% if post.categories != empty and post.subheadline != NULL %} – {% endif %}{{ post.subheadline }}</p>
@@ -21,7 +20,6 @@
         </p>
       </div><!-- /.small-12.columns -->
     </div><!-- /.row -->
-  {% endunless %}
 {% endfor %}
 
 <nav id="pagination">
