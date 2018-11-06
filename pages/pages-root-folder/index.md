@@ -11,7 +11,7 @@ widget1:
   title: "Hello & Welcome to our web site!"
   url: '/getting-started/'
   image: 'welcome-1-302x182.jpg'
-  text: "Welcome to the <em><strong>awesome-automations.com</strong></em> web site! We are excited to bring you all of the cool and wonderful automations into one place to help with your home automation and smart home setup. There are a few things that you need in your setup prior to leveraging the automations we have on this web site. Let's get started!"
+  text: "Welcome to the <em><strong>awesome-automations.com</strong></em> web site! I am excited to bring you all of the cool and wonderful automations into one place to help with your home automation and smart home setup. There are a few things that you need in your setup prior to leveraging the automations we have on this web site. Let's get started!"
 widget2:
   title: "What's the purpose of this web site?"
   url: '/info/'

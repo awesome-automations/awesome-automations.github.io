@@ -1,6 +1,4 @@
 <p>Here are some of the categories currently available. Click on the link to view corresponding set of 'awesome' automations</p>
-<div class="row">
-  {% for link in site.data.ideas %}
-    <h4><a href="{{site.url}}/ideas/{{link.category}}/">🔲&nbsp; {{ link.category |capitalize }}</a></h4>
-  {% endfor %}
-</div>
+{% for link in site.data.ideas %}
+  <a href="{{site.url}}/ideas/{{link.category}}/">🔲&nbsp; {{ link.category |capitalize }}</a>
+{% endfor %}
