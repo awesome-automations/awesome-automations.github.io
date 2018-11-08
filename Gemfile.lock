@@ -9,7 +9,7 @@ GEM
     faraday (0.10.0)
       multipart-post (>= 1.2, < 3)
     ffi (>= 1.9.24)
-    ffi (1.9.14-x64-mingw32)
+    ffi (>= 1.9.24-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.3.1)
       addressable (~> 2.4)
@@ -62,6 +62,7 @@ DEPENDENCIES
   asciidoctor (~> 1.5.4)
   coderay (= 1.1.1)
   gem "jekyll", ">= 3.6.3"
+  gem "ffi", ">= 1.9.24"
   jekyll-asciidoc
   jekyll-gist
   jekyll-paginate
