@@ -1,0 +1,30 @@
+---
+layout: none
+sitemap: false
+permalink: "/hello.html"
+---
+<html>
+   <head>
+      <script type="text/javascript">
+	       var messages = [ "Hello There, Welcome to Discord!", 
+							"Use https://paste.ubuntu.com to share code", 
+							"Pay attention to the welcome rules!",
+							"DO NOT post more than 10-15 lines of text", 
+							"Read the f**ing manual/docs",
+							"READ each Channel description CAREFULLY before posting",
+							"DO NOT cross post",
+							"For HASSIO questions, use #hassio channel",
+							"For lovelace questions, use #lovelace channel",
+							"For Sonoff, Tasmota, use #DIY channel",
+							"Make sure you format your code when posting, and no more than 10-15 lines!"
+							];
+            function Show() {
+			   for (i = 0; i < messages.length; i++) {
+					alert(messages[i]);
+				}
+            }
+      </script>
+  </head>
+   <body onload="Show()">
+   </body>
+</html>
