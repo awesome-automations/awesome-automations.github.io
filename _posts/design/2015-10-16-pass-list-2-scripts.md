@@ -20,6 +20,7 @@ permalink: "/blog/pass-list-2-scripts/"
 
 Here is a simple way you can pass list items as parameters to scripts and automations. The following automation calls a script, called `test_script` and it passes a bunch of entity IDs as parameters. 
 
+{% raw %}
 ```
 homeassistant:
 
@@ -60,3 +61,4 @@ script:
             {{ e }}
             {%- endfor %}
 ```
+{% endraw %}
