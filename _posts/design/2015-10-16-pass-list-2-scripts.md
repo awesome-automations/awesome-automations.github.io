@@ -1,7 +1,7 @@
 ---
 layout: page-fullwidth
 title: "Passing a list as parameters to scripts"
-subheadline: "Passing list to Scripts & Automations"
+subheadline: "Passing list to Scripts and Automations"
 meta_teaser: "Want to pass list items as parameters to the scripts?"
 teaser: "Want to pass list items as parameters to the scripts?"
 comments: true
