@@ -6,17 +6,17 @@ meta_teaser: "Want to pass list items as parameters to the scripts?"
 teaser: "Want to pass list items as parameters to the scripts?"
 comments: true
 header:
-    image_fullwidth: header_unsplash_34.jpg
+    image_fullwidth: header_unsplash_9.jpg
 image:
-    thumb: bluetooth.jpg
-    homepage: header_unsplash_34.jpg
+    thumb: awesome-ha-303x182.jpg
+    homepage: header_unsplash_9.jpg
 categories:
     - scripts
     - automations
 permalink: "/blog/pass-list-2-scripts/"
 ---
 
-<center><img src="{{site.url}}/images/bluetooth.jpg"></center>
+<center><img src="{{site.url}}/images/awesome-ha-303x182.jpg"></center>
 
 Here is a simple way you can pass list items as parameters to scripts and automations. The following automation calls a script, called `test_script` and it passes a bunch of entity IDs as parameters. 
 
