@@ -18,7 +18,9 @@ permalink: "/blog/pass-list-2-scripts/"
 
 <center><img src="{{site.url}}/images/awesome-ha-303x182.jpg"></center>
 
-Here is a simple way you can pass list items as parameters to scripts and automations. The following automation calls a script, called `test_script` and it passes a bunch of entity IDs as parameters. 
+Here is a simple way you can pass list items as parameters to scripts and automations. The following automation calls a script, called `test_script` and it passes a bunch of entity IDs as parameters. Inside the script code, it retrieves all the entity ids, and uses that to turn the lights off.
+
+The code also has a file notify component, where it dumps the information to the log. 
 
 {% raw %}
 ```
@@ -56,7 +58,7 @@ script:
       - service: notify.file_notify
         data_template:
           message: >
-		    {% for e in message.entities_list %}
+            {% for e in message.entities_list %}
             {%- if loop.first %}{% elif loop.last %}, {% else %}, {% endif -%}
             {{ e }}
             {%- endfor %}
