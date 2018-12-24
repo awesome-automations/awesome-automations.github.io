@@ -8,7 +8,7 @@ comments: true
 header:
     image_fullwidth: header_unsplash_9.jpg
 image:
-    thumb: awesome-ha-303x182.jpg
+    thumb: homeassistant.png
     homepage: header_unsplash_9.jpg
 categories:
     - scripts
