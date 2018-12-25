@@ -1,8 +1,7 @@
 ---
 layout: page-fullwidth
 show_meta: false
-title: "Camera Automation Ideas 💡"
-#teaser: "Awesome Camera Ideas"
+title: "Awesome Camera Automations 💡"
 comments: true
 categories:
     - camera

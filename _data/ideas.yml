@@ -17,47 +17,57 @@
     trigger: "Garage Door is Opened"
     condition: "Garage lights are off"
     action: "Turn ON garage lights"
-    details_url: "garage_1.md"
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/door_sensors.yaml
     usecase: >
       Some garages do not have enough lighting, and some times your hands are 
-      full coming home from grocery shopping!
+      full coming home from grocery shopping! Very convenient to have the lights turned on for you when needed!
 
   - id: "2"
+    title: "Turn lights ON when motion detected in Garage"
+    trigger: "Motion detected in garage"
+    condition: "Garage lights are off|it is dark outside|after sunset"
+    action: "Turn ON garage lights"
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/door_sensors.yaml
+    usecase: >
+      Some garages do not have enough lighting, and when you go in there to throw trash or to pickup some stuff, 
+      the lights will be automatically turned ON for you.
+
+  - id: "3"
     title: "Turn garage lights OFF after X minutes"
     trigger: "Lights are on for X minutes"
     condition: "No motion detected for more than X minutes"
     action: "Turn OFF garage lights"
-    details_url: 
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/door_sensors.yaml
     usecase: "Save energy"
 
-  - id: "3"
+  - id: "4"
     title: "Notify garage door state change when security system is ON"
     trigger: "Garage doors are open"
     condition: "Home Security System is set to away or home mode"
     action: "Notify me on my mobile"
-    details_url: 
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/door_sensors.yaml
     usecase: >
       You think your home is secured by turning on your home security system, 
-      but didn't realize your garage door is open.
-
-  - id: "4"
-    title: "Announce garage door status for every state change"
-    trigger: "Garage doors are open"
-    condition: "Home Security System is set home mode"
-    action: "Notify via TTS"
-    details_url:
-    usecase: >
-      A TTS announcement in the house that someone opened your garage door."
+      but you didn't realize your garage door is open. This automation will remind you to close the garage door. If you have automatic garage door, it can even close it for you!
 
   - id: "5"
+    title: "Announce when garage doors are opened or closed"
+    trigger: "Garage doors are opened or closed"
+    condition: "Home Security System is set home mode"
+    action: "Notify via TTS"
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/door_sensors.yaml
+    usecase: >
+      An announcement in the house that someone opened your garage door."
+
+  - id: "6"
     title: "Email garage camera snapshot when garage door state changed"
     trigger: "Garage doors status changed"
     condition: "None"
     action: "Email me a picture of garage"
-    details_url:
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/door_sensors.yaml
     usecase: >
       When you think you closed the garage door on your way to work, 
-      a confirmation picture reassures it!
+      a confirmation picture reassures it! How many times you doubt yourself whether you closed the garage door or not when you are away from home?
 
 ###############################################################################
 #    _____         _ _       _     
@@ -94,28 +104,26 @@
   category: camera
   dropdown:
   - id: "1"
-    title: "Image Processing"
+    title: "Detect faces and objects in your camera feed"
     trigger: > 
-      Camera-1 motion detected|
-      Camera-2 motion detected|
-      Camera-3 motion detected
+      Camera motion detected
     condition: "Last executed is more than 60 seconds"
-    action: "Recognize objects and people and update sensors"
-    details_url: 
+    action: "Use Tensorflow or FaceBox or TagBox to recognize faces|"
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/cameras.yaml
     usecase: >
       To know who is out there! Whenever the cameras detect motion, feed the 
       camera image and recognize people and objects in it, and update the sensors. 
-      Then have an automation that alerts on the sensor change.
+      Then have an automation that alerts on the sensor change. It is useful to know whats going on around your house.
 
   - id: "2"
-    title: "Motion Detected On Camera"
+    title: "Alert me when motion detected on Cameras"
     trigger: "When motion detected from camera's point of view"
     condition: "When Alert mode is ON"
     action: >
       Take snapshot of all camera images, and save it to a local file|
       Email images as an attachment|
       When Home, send a iOS notification with the camera's live feed"
-    details_url: 
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/cameras.yaml
     usecase: >
       To know who is out there! This comes in handy when you are not home, 
       and you do not have access to your camera feed directly. 
@@ -135,21 +143,21 @@
   category: "security"
   dropdown:
   - id: "1"
-    title: "Turn ON Home Security System When everyone is away"
+    title: "Turn ON Home Security System automaically when no one is home"
     trigger: "When all family members are away"
     condition: "None"
-    action: "Turn ON Home Security System"
-    details_url:
+    action: "Turn ON Home Security System automatically|Send a confirmation that the home is secured!"
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/homesecurity.yaml
     usecase: >
       You are so excited to go on vacation, and you forgot to turn on your 
       home security system. A smart home should take of your home!"
 
   - id: "2"
-    title: "Send a text message when Home Security System state changed"
+    title: "Text me when Home Security status changes"
     trigger: "When Home Security System State Changed"
     condition: "None"
     action: "Notify my cell phone"
-    details_url:
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/homesecurity.yaml
     usecase: >
       Peace of mind to know your home security status - on/off, away or home!"
 
@@ -157,22 +165,31 @@
     title: "Change light bulb color when security system state changes"
     trigger: "Home Security System state changed"
     condition: "after dark"
-    action: "Change hallway light color to GREEN when secured, and RED when unsecured"
-    details_url:
+    action: "Change hallway light color to GREEN when secured| RED when unsecured - A visual indication is always better!"
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/homesecurity.yaml
     usecase: >
       A visual indication in the hallway before you open the window... 
       if you see red light, you need to turn your home security system off 
-      before opening that door!
+      before opening that door! Or when you see a red light in the night, that means you forgot to turn on your home security system.
 
   - id: "4"
     title: "Home Security System WatchDog"
     trigger: "Home Security System state changed to unarmed/off"
     condition: "after dark (optional)|Home Security System 'nag' mode is ON"
     action: "Continue to nag every 5 minutes to turn ON the home Security system"
-    details_url:
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/homesecurity.yaml
     usecase: >
       Sometimes we forget to turn ON home secutity system, this automation 
       reminds you every 5 minutes until you turn it ON, or disable the 'nag' mode
+
+  - id: "5"
+    title: "We're AWAY, Secure the house, please!"
+    trigger: "Home Security System state changed to away"
+    condition: "None"
+    action: "Turn off all the indoor lights|Turn ON outdoor lights if it is after sunset|Set Thermostat to AWAY mode|Be extra Vigilant and alert when any motion detected outside"
+    details_url: https://github.com/skalavala/smarthome/blob/master/packages/homesecurity.yaml
+    usecase: >
+      When you leave the house, your smart home wants to do somethings for you automatically - like turning lights off, setting thermostat, capture camera feed and alert any motion detected around the house.
 
 ###############################################################################
 #   _______ _                                   _        _   

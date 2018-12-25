@@ -11,12 +11,12 @@ widget1:
   title: "Hello & Welcome to our web site!"
   url: '/getting-started/'
   image: 'welcome-1-302x182.jpg'
-  text: "Welcome to the <em><strong>awesome-automations.com</strong></em> web site! I am excited to bring you all of the cool and wonderful automations into one place to help with your home automation and smart home setup. There are a few things that you need in your setup prior to leveraging the automations we have on this web site. Let's get started!"
+  text: "Welcome to the <em><strong>awesome-automations.com</strong></em> web site! I am excited to bring you all of the cool and wonderful automations into one place to help with your home automation and smart home setup. There are a few things that you need in your setup prior to leveraging the automations... Let's get started!"
 widget2:
   title: "What's the purpose of this web site?"
   url: '/info/'
   image: awesome-1-302x182.jpg
-  text: "To bring all the <em><strong>awesome</strong></em> ideas and automations into a central place for you to get started. The Home Automation community is by far the most creative community out there, constantly thinking of automating various things in their life. This site captures the essence of that, and we need your help to make it better!"
+  text: "To bring all the <em><strong>awesome</strong></em> ideas and automations into a central place for you to get started. The Home Automation community is by far the most creative community out there, constantly thinking of automating various things in their life. This site captures the essence of that, and your help in make it better is much apprciated!"
 widget3:
   title: "Awesome-HA Just for you!"
   url: 'http://www.awesome-ha.com'

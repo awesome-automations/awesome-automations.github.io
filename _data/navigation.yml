@@ -1,12 +1,15 @@
 - title: Home
   url: "/"
   side: left
-  
-- title: Getting Started
-  url: "/getting-started/"
+  dropdown:
+  - title: Getting Started
+    url: "/getting-started/"
+
+- title: My Dashboard
+  url: "/dashboard/"
   side: left
 
-- title: "Smart Home Devices"
+- title: "My Smart Devices"
   url: "/smarthome-devices/"
   side: left
   dropdown:
@@ -35,7 +38,7 @@
   - title: "Gateways/Hubs"
     url: "/smarthome-devices/gateway/"
 
-- title: "Automation Ideas"
+- title: "Automations"
   url: "/ideas/"
   side: left
   dropdown:
