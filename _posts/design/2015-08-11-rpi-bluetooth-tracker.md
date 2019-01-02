@@ -22,6 +22,7 @@ Here is a simple way to use your Raspberry Pi’s bluetooth for presence detecti
 
 To get started, make sure you have python bluetooth libraries installed by running the following commands. Also make sure the Bluetooth is enabled on the RPi.
 
+
 ```
 sudo apt-get install bluetooth
 sudo apt-get install python-bluez
