@@ -33,7 +33,7 @@ Once you have Google's Chromecast device configured, restart your Home Assistant
 
 The Chromecast device has the built-in capability to play live web stream - usually in the form of HTTP Live Stream (also known as HLS). Most of the IP based cameras that we have today support RTSP (Realtime streaming protocol).
 
-For your Chromecast to play your camera feed, somehow the RTSP stream needs to be converted to HLS. For that, we will use program called [streamer](https://github.com/gihad/streamer) that does real-time stream conversion. It not only converts the stream, but also runs a web server on a specific port, where you can access the streams/camera feeds. For that, it uses NGINX (a reverse proxy), that dos the port translation. For example, you can chose to run the streamer on a port `9999`, the nginx receives the HTTP requests on the port `9999`, and forwards that request to port `80` running inside the docker container.
+For your Chromecast to play your camera feed, somehow the RTSP stream needs to be converted to HLS. For that, we will use program called [streamer](https://github.com/gihad/streamer) that does real-time stream conversion. It not only converts the stream, but also runs a web server on a specific port, where you can access the streams/camera feeds. For that, it uses NGINX (a reverse proxy), that does the port translation. For example, you can chose to run the streamer on a port `9999`, the nginx receives the HTTP requests on the port `9999`, and forwards that request to port `80` running inside the docker container.
 
 ### Step 2: Setting up Streamer
 
