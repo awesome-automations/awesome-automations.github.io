@@ -82,7 +82,7 @@ Now that you have connected Chromecast device to your TV, configured Chromecast 
       - service: media_player.play_media
         data:
           entity_id: media_player.attic_tv
-          media_content_id: !secret frontdoor_camera_stream_url
+          media_content_id: http://192.168.xxx.xxx:8080/frontyard.m3u8
           media_content_type: video
 ```
 
