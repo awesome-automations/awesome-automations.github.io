@@ -53,7 +53,7 @@ docker run -e PARAMETERS="rtsp://username:password@192.168.xxx.xxx:xxx/cam/realm
 
 If you want to run the docker container in the background, just add `-d` option to the command line. You may also want to add restart option to restart always - in case if it crashes for any reason.
 
-TIP: I use [HikVision](http://amzn.to/2suiPhT) cameras in my setup, and the URLs for the [HikVision](http://amzn.to/2suiPhT) camera is usually in the format `http://username:password@192.168.xxx.xxx/ISAPI/Streaming/channels/101/picture`. The URL is typically different from vendor to vendor, you can't copy and paste the URL and expect it to work.
+TIP: I use [HikVision](http://amzn.to/2suiPhT) cameras in my setup, and the URL for the [HikVision](http://amzn.to/2suiPhT) camera is usually in the format `http://username:password@192.168.xxx.xxx/ISAPI/Streaming/channels/101/picture`. The URL is typically different from vendor to vendor, you can't copy and paste the URL and expect it to work.
 
 After running the docker, you should be able to access the camera stream using HTTP Live Streaming. To test it, Install VLC media player on your computer, and go to File -> Open network stream -> and paste the following URL:
 
@@ -87,6 +87,9 @@ Now that you have connected Chromecast device to your TV, configured Chromecast 
 ```
 
 ### Known Issues:
-WHile streaming the live camera feed through Chromecast to TV is fantastic, if there is no activity, the chromecast may detect that and may go into screensaver mode. When it goes into screensaver mode, it randomly displays beautiful static images. There are techniques you can use to work around that, by changing the streams every few minutes, adding more dynamic content...etc.
+While streaming the live camera feed through Chromecast to TV is fantastic, if there is no activity, the chromecast may detect that and may go into screensaver mode. When it goes into screensaver mode, it randomly displays beautiful static images. There are techniques you can use to work around that, by changing the streams every few minutes, adding more dynamic content...etc.
 
-Special thanks to [@quadflight](https://github.com/quadflight) for the idea behind using Chromecast and streamer combination. That man is full of ideas, and also the reason for my many sleepless nights! :)
+### Credits
+* Special thanks to [@quadflight](https://github.com/quadflight) for the idea behind using Chromecast and streamer combination. That man is full of ideas, and also the reason for my many sleepless nights! :)
+
+* To the Author of `Streamer` component - [Gihad Murad](https://github.com/gihad/streamer)
