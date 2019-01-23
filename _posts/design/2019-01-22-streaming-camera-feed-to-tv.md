@@ -89,6 +89,12 @@ Now that you have connected Chromecast device to your TV, configured Chromecast 
 ### Known Issues:
 While streaming the live camera feed through Chromecast to TV is fantastic, if there is no activity, the chromecast may detect that and may go into screensaver mode. When it goes into screensaver mode, it randomly displays beautiful static images. There are techniques you can use to work around that, by changing the streams every few minutes, adding more dynamic content...etc.
 
+### Chromecast Tips
+
+* If you have connected Chromecast to your TV, and your TV has a space USB port open, use that to power Chromecast. That way when you turn OFF TV, your Chromecast will be turned OFF as well. This saves power, and any unnecessary communication with Google or other web sites.
+
+* During idle time, Chromecast downloads random images and shows them as screensaver images. If you are on a limited internet connection (metered connection), you may want to disable that by going into your Google Home App, and select google photos as the "source" for images. You can add a few 1 pixel by 1 pixel color images in your google photos. 
+
 ### Credits
 * Special thanks to [@quadflight](https://github.com/quadflight) for the idea behind using Chromecast and streamer combination. That man is full of ideas, and also the reason for my many sleepless nights! :)
 
