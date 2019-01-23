@@ -91,7 +91,7 @@ While streaming the live camera feed through Chromecast to TV is fantastic, if t
 
 ### Chromecast Tips
 
-* If you have connected Chromecast to your TV, and your TV has a space USB port open, use that to power Chromecast. That way when you turn OFF TV, your Chromecast will be turned OFF as well. This saves power, and any unnecessary communication with Google or other web sites.
+* If you have connected Chromecast to your TV, and your TV has a spare USB port open, use that to power Chromecast. That way when you turn OFF TV, your Chromecast will be turned OFF as well. This saves power, and any unnecessary communication with Google or other web sites.
 
 * During idle time, Chromecast downloads random images and shows them as screensaver images. If you are on a limited internet connection (metered connection), you may want to disable that by going into your Google Home App, and select google photos as the "source" for images. You can add a few 1 pixel by 1 pixel color images in your google photos. 
 
