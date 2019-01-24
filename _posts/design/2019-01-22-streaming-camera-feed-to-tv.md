@@ -53,7 +53,11 @@ docker run -e PARAMETERS="rtsp://username:password@192.168.xxx.xxx:xxx/cam/realm
 
 If you want to run the docker container in the background, just add `-d` option to the command line. You may also want to add restart option to restart always - in case if it crashes for any reason.
 
-TIP: I use [HikVision](http://amzn.to/2suiPhT) cameras in my setup, and the URL for the [HikVision](http://amzn.to/2suiPhT) camera is usually in the format `http://username:password@192.168.xxx.xxx/ISAPI/Streaming/channels/101/picture`. The URL is typically different from vendor to vendor, you can't copy and paste the URL and expect it to work.
+TIP: I use [HikVision](http://amzn.to/2suiPhT) cameras in my setup, and the URL for the [HikVision](http://amzn.to/2suiPhT) camera is usually in the format `http://username:password@192.168.xxx.xxx/ISAPI/Streaming/channels/101/picture`. The URL is typically different from vendor to vendor, you can't copy and paste the URL and expect it to work. If you paste that URL, it should render the camera image. If you see a camera image, that means the URL is correct.  Then replace the `http:` with `rtsp:` and use it in the `Streamer` docker command line. Here is how the final URL would look like if you own a HikVision Camera:
+
+```
+rtsp://username:password@192.168.xxx.xxx/ISAPI/Streaming/channels/101/picture
+```
 
 After running the docker, you should be able to access the camera stream using HTTP Live Streaming. To test it, Install VLC media player on your computer, and go to File -> Open network stream -> and paste the following URL:
 
@@ -88,6 +92,26 @@ Now that you have connected Chromecast device to your TV, configured Chromecast 
 
 ### Known Issues:
 While streaming the live camera feed through Chromecast to TV is fantastic, if there is no activity, the chromecast may detect that and may go into screensaver mode. When it goes into screensaver mode, it randomly displays beautiful static images. There are techniques you can use to work around that, by changing the streams every few minutes, adding more dynamic content...etc.
+
+#### Workaround
+
+Here is a workaround to prevent from screensaver kicking in. Just add the folowing automation to your Home Assistant codebase, you are set. What this does, is it checks whenever Chromecast goes into screensaver mode, in which case, the state becomes "off", it turns it back on and shows the default camera as frontyard camera :)
+
+```
+  - alias: Keep Chromecast On
+    trigger:
+      - platform: state
+        entity_id: media_player.attic_tv
+        to: 'off'
+    action:
+      - service: media_player.turn_on
+        entity_id: media_player.attic_tv
+      - service: media_player.play_media
+        data:
+          entity_id: media_player.attic_tv
+          media_content_id: http://192.168.xxx.xxx:8080/frontyard.m3u8
+          media_content_type: video
+```
 
 ### Chromecast Tips
 
